@@ -60,7 +60,15 @@ A **chronic condition count** feature was engineered from diagnosis indicator co
 
 ## Evaluation
 
-Models were evaluated using R² (variance explained), with log loss used to measure prediction accuracy on the log-transformed target. A naive baseline using mean expenditure was established as a minimum performance threshold.
+Models were evaluated on the log-transformed target variable using the following metrics:
+
+| Metric | Score |
+|---|---|
+| R² | 0.338 |
+| RMSE | 2.620 |
+| MAE | 1.955 |
+
+The final model explains ~33.8% of variance in log-transformed healthcare expenditures. Metrics are reported on the log scale given the `log1p` transformation applied to the target variable.
 
 ---
 
@@ -70,6 +78,8 @@ Models were evaluated using R² (variance explained), with log loss used to meas
 - Performance limitations stem from feature signal rather than model flexibility
 - Gradient Boosting produced the best results, with further gains after adding chronic condition count
 - Healthcare spending is driven by nonlinear interactions not fully captured by demographic features alone
+- The final Gradient Boosting model with chronic condition count achieved an R² of 0.338,
+  up from 0.265 with demographic features alone
 
 ---
 
