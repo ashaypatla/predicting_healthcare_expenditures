@@ -94,7 +94,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 Download `HC-243` from the MEPS website and place it in the project directory.
 
 **3. Run the notebook**  
-Open `data_review.ipynb` in Jupyter Notebook or VS Code and run all cells.
+Open `predicting_healthcare_spending.ipynb` in Jupyter Notebook or VS Code and run all cells.
 
 ---
 
