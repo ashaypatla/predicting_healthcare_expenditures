@@ -6,7 +6,7 @@ A machine learning project that predicts annual healthcare expenditures using th
 
 ## Overview
 
-Healthcare costs are highly skewed — a small proportion of individuals account for a disproportionately large share of total spending. This project trains and compares multiple regression models to predict individual annual expenditures, using demographic, insurance, socioeconomic, and chronic condition features from MEPS survey data.
+Healthcare costs are highly skewed; a small proportion of individuals account for a disproportionately large share of total spending. This project trains and compares multiple regression models to predict individual annual expenditures, using demographic, insurance, socioeconomic, and chronic condition features from MEPS survey data.
 
 ---
 
@@ -51,10 +51,10 @@ A **chronic condition count** feature was engineered from diagnosis indicator co
 | Model | Notes |
 |---|---|
 | Baseline (mean predictor) | Naive benchmark |
-| Linear Regression | 26.5% variance explained — demographic features provide signal |
+| Linear Regression | 26.5% variance explained, demographic features provide signal |
 | Ridge Regression | Performed similarly to linear regression; overfitting was not the primary issue |
-| Random Forest | Underperformed linear models — feature signal was the limiting factor |
-| Gradient Boosting | Best performer — captured weak nonlinear relationships via residual fitting |
+| Random Forest | Underperformed linear models, feature signal was the limiting factor |
+| Gradient Boosting | Best performer, captured weak nonlinear relationships via residual fitting |
 
 ---
 
